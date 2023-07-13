@@ -91,7 +91,7 @@ with gr.Blocks(css="/content/Gpt_Rol/Css (CDG).css", theme=gr.themes.Soft()) as 
 
   with gr.Row(elem_id="seccion_de_lado",):
     with gr.Column(elem_id="seccion-personaje_imagen"):
-      imagen = gr.Image(imagen_personaje, elem_id="imagen_personaje", label=f"{personaje}", show_label=False)
+      imagen = gr.Image(imagen_personaje, elem_id="imagen_personaje", show_label=False, show_share_button=False)
     with gr.Column():
       gr.HTML(f"""<style>
   @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
