@@ -7,7 +7,6 @@ import requests
 from sys import argv
 
 personaje = argv[1]
-print(personaje)
 
 crea_historial = open("/content/.historial.txt","a")
 empieza = crea_historial.write("")
@@ -22,6 +21,10 @@ elif "Victor" in personaje:
 elif "Saimon" in personaje:
   voz_eleven = "pNInz6obpgDQGcFmaJgB"
 
+def api(api_key):
+  openai.api_key = api_key
+  return "Enviado con exito"
+  
 def limpiar_texto():
   return gr.Textbox.update("")
   
@@ -139,14 +142,14 @@ with gr.Blocks(css=css, theme=gr.themes.Soft()) as gptchat:
         PES_2_texto1 = gr.Textbox(label="API gpt", placeholder="Ingresa tu clave API de gpt",)
         PES_2_texto2 = gr.Textbox(label="API eleven (Opcional)", placeholder="Ingresa tu clave API de elevenlabs")
         PES_2_boton1 = gr.Button("Enviar")
-        PES_2_boton2 = gr.Textbox(label="confirmacion")
+        PES_2_texto3 = gr.Textbox(label="confirmacion")
     with gr.Column():
       PES_1_texto1 = gr.Textbox(label="Tu", placeholder="Ingresa tu mensaje", lines=2)
       PES_1_boton1 = gr.Button("Enviar")
       PES_1_boton2 = gr.Button("limpiar")
 
   PES_1_boton1.click(fn=Gpt35, inputs=[PES_1_texto1,PES_2_texto2], outputs=PES_1_texto2)
-  PES_2_boton1.click(fn=api, inputs=PES_2_texto1, outputs=PES_2_boton2)
+  PES_2_boton1.click(fn=api, inputs=PES_2_texto1, outputs=PES_2_texto3)
   PES_1_boton2.click(fn=limpiar_texto,inputs=None,outputs=PES_1_texto1)
 
 gptchat.launch(share=True, inline=False, debug=True)
