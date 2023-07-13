@@ -1,5 +1,6 @@
-def limpiar_texto():
-  return gr.Textbox.update("")
+from sys import argv
+
+personaje = argv[1]
 
 crea_historial = open("/content/.historial.txt","a")
 empieza = crea_historial.write("")
@@ -14,7 +15,9 @@ elif "Victor" in personaje:
 elif "Saimon" in personaje:
   voz_eleven = "pNInz6obpgDQGcFmaJgB"
 
-
+def limpiar_texto():
+  return gr.Textbox.update("")
+  
 def Gpt35(mensaje,api_eleven):
   ver_historial = open(".historial.txt","r")
   historial = "contexto anterior\n\n````\n"+ver_historial.read()+"````\n"
