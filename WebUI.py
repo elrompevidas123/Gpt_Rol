@@ -7,6 +7,7 @@ import requests
 from sys import argv
 
 personaje = argv[1]
+print(personaje)
 
 crea_historial = open("/content/.historial.txt","a")
 empieza = crea_historial.write("")
