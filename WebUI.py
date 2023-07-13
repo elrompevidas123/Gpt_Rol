@@ -83,7 +83,7 @@ assistant: {gpt}"""
 
   return gpt
 
-with gr.Blocks(css="/content/Gpt_Rol/Css (CDG).css", theme=gr.themes.Soft()) as gptchat:
+with gr.Blocks(css="/content/Gpt_Rol/Css (CDG).css", theme=gr.themes.Soft(), title=f"GPT Rol {personaje}") as gptchat:
   gr.HTML("""<style>
   @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 </style>
