@@ -101,7 +101,7 @@ with gr.Blocks(css="/content/Gpt_Rol/Css (CDG).css", theme=gr.themes.Soft(), tit
   with gr.Row(elem_id="seccion_mensajes"):
     with gr.Column():
       PES_1_texto2 = gr.Textbox(label=f"{personaje}", placeholder=f"""Mensaje de {personaje}""", lines=2)
-      PES_1_boton1 = gr.Audio("/content/Teaching Feeling  Ochre Breeze.mp3", visible=False)
+      PES_1_boton1 = gr.Audio("/content/Teaching Feeling  Ochre Breeze.mp3")
       with gr.Accordion(label="Ingresa tus Apis aqui\n", open=False, elem_id="seccion_apis"):
         PES_2_texto1 = gr.Textbox(label="API gpt", placeholder="Ingresa tu clave API de gpt",)
         PES_2_texto2 = gr.Textbox(label="API eleven (Opcional)", placeholder="Ingresa tu clave API de elevenlabs")
