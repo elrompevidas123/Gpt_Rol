@@ -1,3 +1,9 @@
+from IPython.display import clear_output, display, Audio, HTML
+from random import choice
+import gradio as gr
+import openai
+import elevenlabs
+import requests
 from sys import argv
 
 personaje = argv[1]
