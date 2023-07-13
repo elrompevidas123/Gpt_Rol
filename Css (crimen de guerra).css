@@ -1,0 +1,35 @@
+"""
+
+* {
+  margin 0px !important;
+}
+
+#titulo {
+  margin: 0 0 0 70px;
+}
+
+#seccion_de_lado {
+  width: 750px;
+  height: 250px;
+}
+
+#imagen_personaje {
+  margin: 0 0 0 140px;
+  width: 225px;
+  height: 225px;
+}
+
+#descripcion_personaje {
+  width: 370px;
+  height: 400px;
+}
+
+#seccion_mensajes {
+  margin: 0 0 0 140px;
+  width: 950px;
+}
+
+#seccion_apis {
+  width:466px;
+}
+"""
