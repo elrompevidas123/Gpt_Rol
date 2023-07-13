@@ -83,44 +83,7 @@ assistant: {gpt}"""
 
   return gpt
 
-
-css="""
-
-* {
-  margin 0px !important;
-}
-
-#titulo {
-  margin: 0 0 0 70px;
-}
-
-#seccion_de_lado {
-  width: 750px;
-  height: 250px;
-}
-
-#imagen_personaje {
-  margin: 0 0 0 140px;
-  width: 225px;
-  height: 225px;
-}
-
-#descripcion_personaje {
-  width: 370px;
-  height: 400px;
-}
-
-#seccion_mensajes {
-  margin: 0 0 0 140px;
-  width: 950px;
-}
-
-#seccion_apis {
-  width:466px;
-}
-"""
-
-with gr.Blocks(css=css, theme=gr.themes.Soft()) as gptchat:
+with gr.Blocks(css="/content/Gpt_Rol/Css (CDG).css", theme=gr.themes.Soft()) as gptchat:
   gr.HTML("""<style>
   @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 </style>
