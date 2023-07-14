@@ -4,12 +4,16 @@
   margin 0px !important;
 }
 
+#titulo {
+  margin: 0 0 0 70px;
+}
+
 .svelte-1030q2h {
   visibility: hidden !important;
 }
 
-#titulo {
-  margin: 0 0 0 70px;
+#audio {
+  margin: 0 0 0 1700px;
 }
 
 #seccion_de_lado {
