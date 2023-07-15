@@ -77,9 +77,6 @@ assistant: {gpt}"""
             if chunk:
                 f.write(chunk)
 
-    clear_output()
-    display(Audio("/content/.salida.mp3", autoplay=True))
-
 
   return gpt
 
