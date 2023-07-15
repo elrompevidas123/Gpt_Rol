@@ -27,6 +27,9 @@ def api(api_key):
   
 def limpiar_texto():
   return gr.Textbox.update("")
+
+def Audio_repro():
+  return "/content/.salida.mp3"
   
 def Gpt35(mensaje,api_eleven):
   ver_historial = open(".historial.txt","r")
@@ -108,8 +111,8 @@ with gr.Blocks(css="/content/Gpt_Rol/Css (CDG).css", theme=gr.themes.Soft(), tit
       PES_1_boton1 = gr.Button("Enviar")
       PES_1_boton2 = gr.Button("limpiar")
   Audio_final = gr.Audio(container=False, show_label=False, interactive=False, elem_id="audio")
-  texto_joder = gr.Textbox(label="dira joder")
 
+  PES_1_boton1-ciick(fn=Audio_repro, inputs=None, outputs=Audio_final)
   PES_1_boton1.click(fn=Gpt35, inputs=[PES_1_texto1,PES_2_texto2], outputs=PES_1_texto2)
   PES_2_boton1.click(fn=api, inputs=PES_2_texto1, outputs=PES_2_texto3)
   PES_1_boton2.click(fn=limpiar_texto,inputs=None,outputs=PES_1_texto1)
