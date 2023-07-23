@@ -5,7 +5,11 @@
 }
 
 gradio-app {
-  background-color: yellow;
+  background-color: url("http://imgfz.com/i/sh57lLH.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 #titulo {
