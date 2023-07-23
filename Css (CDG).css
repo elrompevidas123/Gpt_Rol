@@ -4,6 +4,10 @@
   margin 0px !important;
 }
 
+gradio-app {
+  background-color: red !important;
+}
+
 #titulo {
   margin: 0 0 0 70px;
 }
