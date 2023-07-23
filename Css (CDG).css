@@ -10,7 +10,6 @@ gradio-app {
   background-attachment: fixed !important;
   background-position: center !important;
   background-size: cover !important;
-  filter: blur(10px); !important;
 }
 
 #titulo {
