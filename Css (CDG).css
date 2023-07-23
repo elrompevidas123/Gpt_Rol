@@ -6,6 +6,8 @@
 
 gradio-app {
   background-image: url("http://imgfz.com/i/jWQE9h2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #titulo {
