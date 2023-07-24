@@ -4,6 +4,10 @@
   margin 0px !important;
 }
 
+.svelte-1btp92j {
+  shadow-box: 0 0 0 5px #011206;
+}
+
 gradio-app {
   background-image: url("") !important;
   background-repeat: no-repeat !important;
